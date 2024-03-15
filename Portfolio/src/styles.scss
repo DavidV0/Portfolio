@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins-regular;
+}
+
+@font-face {
+  font-family: poppins-regular;
+  src: url(../src/assets/fonts/Poppins-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(../src/assets/fonts/Poppins-Bold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: poppins-light;
+  src: url(../src/assets/fonts/Poppins-Light.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: poppins-italic;
+  src: url(../src/assets/fonts/Poppins-Italic.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(../src/assets/fonts/Poppins-Medium.ttf) format("opentype");
+  }
+
+
+
