@@ -1,0 +1,45 @@
+.container {
+    position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #141d2f;
+  color: white;
+  z-index: 10;
+
+  > img {
+    padding-left: 10vw;
+    cursor: pointer;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 10vw;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #e2e3e5;
+  font-weight: 400px;
+  font-size: 24px;
+  cursor: pointer;
+  &:hover {
+    color: #62c918;
+  }
+}
+
+.active {
+    >a{
+        color: #62c918;
+    }
+
+  > div {
+    width: 55px;
+    border-bottom: solid 4px #9747ff;
+  }
+}
