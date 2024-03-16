@@ -1,0 +1,20 @@
+@import "../../../styles.scss";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 58px;
+  background-color: $lightBlue;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.225s ease-in-out;
+    background-color: $darkBlue;
+    text-shadow: 1px 1px 2px;
+    transform: scale(1.2);
+  }
+}

@@ -4,6 +4,48 @@
   font-family: poppins-regular;
 }
 
+$lightBlue: #00BEE8;
+$darkBlue: #4b47ff;
+$backgroundColor: #141d2f;
+
+
+@mixin dFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  background-color: #141d2f;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background: $darkBlue;
+    height: 100%;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: $lightBlue;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: $darkBlue;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+
+
 @font-face {
   font-family: poppins-regular;
   src: url(../src/assets/fonts/Poppins-Regular.ttf) format("opentype");

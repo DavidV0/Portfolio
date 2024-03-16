@@ -1,3 +1,6 @@
+@import "../../../styles.scss";
+
+
 .container {
     position: fixed;
   display: flex;
@@ -5,14 +8,10 @@
   align-items: center;
   width: 100vw;
   height: 10vh;
-  background-color: #141d2f;
+  background-color: $backgroundColor;
   color: white;
   z-index: 10;
 
-  > img {
-    padding-left: 10vw;
-    cursor: pointer;
-  }
 
   > div {
     display: flex;
@@ -20,6 +19,24 @@
     gap: 16px;
     padding-right: 10vw;
   }
+}
+
+.logo {
+  padding-left: 10vw;
+  font-weight: 400px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+.i{
+  margin-left: -15px;
+  color: $darkBlue;
+}
+
+.d{
+  margin-left: -15px;
+  color: $lightBlue;
 }
 
 .link {
