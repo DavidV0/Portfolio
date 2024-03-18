@@ -16,11 +16,13 @@ $backgroundColor: #141d2f;
 }
 
 body {
-  margin: 0;
+  margin: auto;
   background-color: #141d2f;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  max-width: 1440px;
   overflow-x: hidden;
 }
 

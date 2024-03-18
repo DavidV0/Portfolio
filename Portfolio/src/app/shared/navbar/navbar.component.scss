@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  max-width: 1440px;
   height: 10vh;
   background-color: $backgroundColor;
   color: white;
@@ -46,17 +47,100 @@
   font-size: 24px;
   cursor: pointer;
   &:hover {
-    color: #62c918;
+    color: $lightBlue;
   }
 }
 
 .active {
     >a{
-        color: #62c918;
+        color: $lightBlue;
     }
 
   > div {
     width: 55px;
-    border-bottom: solid 4px #9747ff;
+    border-bottom: solid 4px $darkBlue;
+  }
+}
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: $darkBlue, $alpha: 0.9);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+  padding-top: 150px;
+  transition: display 0.5s ease-in-out;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.links-mobile {
+  cursor: pointer;
+  position: relative;
+  font-size: 36px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $lightBlue;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  > a {
+    color: $lightBlue;
+    text-decoration: none;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 60px;
+  }
+
+  #menu-toggle {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .logo {
+    margin-left: 10px;
+  }
+
+  #menu-toggle {
+    margin-right: 10px;
   }
 }
