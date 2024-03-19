@@ -4,52 +4,41 @@
     <span class="d">d</span>
   </div>
   <div class="links">
-    <div  (click)="clickEvent(0)"  
-    [ngClass]="about ? 'active' : 'link'">
-      <a  href="#" class="link">About me</a>
+    <div (click)="clickEvent(0)" [ngClass]="about ? 'active' : 'link'">
+      <a href="#" class="link">About me</a>
       <div></div>
     </div>
 
-    <div (click)="clickEvent(1)"  
-    [ngClass]="skills ? 'active' : 'link'">
-      <a  href="#" class="link">Skills</a>
+    <div (click)="clickEvent(1)" [ngClass]="skills ? 'active' : 'link'">
+      <a href="#" class="link">Skills</a>
       <div></div>
     </div>
-    <div  (click)="clickEvent(2)"  
-    [ngClass]="portfolio ? 'active' : 'link'">
+    <div (click)="clickEvent(2)" [ngClass]="portfolio ? 'active' : 'link'">
       <a href="#" class="link">Portfolio</a>
       <div></div>
     </div>
   </div>
+  <div id="menu-toggle" (click)="openMobileMenu()">
+    <input type="checkbox" #checkbox />
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
-
-
-<div id="menu-toggle" (click)="openMobileMenu()">
-  <input type="checkbox" #checkbox/>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-
 
 <div class="overlay" [ngClass]="{ active: showOverlay }">
-<div id="menu">
-<div class="links-mobile">
-  <a [routerLink]="['/']" (click)="goTo('#aboutMe')">{{
-    "header.about"
-  }}</a>
-</div>
-<div class="links-mobile">
-  <a [routerLink]="['/']" (click)="goTo('#skills')">Skills</a>
-</div>
-<div class="links-mobile">
-  <a [routerLink]="['/']" (click)="goTo('#portfolio')">Portfolio</a>
-</div>
-<div class="links-mobile">
-  <a [routerLink]="['/']" (click)="goTo('#contact')">{{
-    "contact.contact" 
-  }}</a>
-</div>
-</div>
+  <div id="menu">
+    <div class="links-mobile">
+      <a>About  me</a>
+    </div>
+    <div class="links-mobile">
+      <a>Skills</a>
+    </div>
+    <div class="links-mobile">
+      <a>Portfolio</a>
+    </div>
+    <div class="links-mobile">
+      <a >Contact</a>
+    </div>
+  </div>
 </div>
