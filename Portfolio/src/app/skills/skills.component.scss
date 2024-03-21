@@ -80,7 +80,7 @@
   margin-top: 50px;
 }
 
-.shadow-green img {
+.background-image img {
   position: absolute;
   
   width: 428.59px;
@@ -139,8 +139,8 @@ rotate: 151.74 deg;
     padding: 0;
   }
 
-  .shadow-green img {
-    top: 250px;
+  .background-image img {
+    top: 2182.96px;
   }
 
   .skill-container {
@@ -164,14 +164,11 @@ rotate: 151.74 deg;
     text-align: end;
   }
 
-  .get-in-touch-btn {
-    padding-left: 200px;
-  }
-  .shadow-green img {
-    width: 200px;
-    height: 200px;
-    top: 500px;
-    left: 100px;
+
+  .background-image img {
+  
+    height: 700px;
+    width: 320px;
   }
 }
 
@@ -198,20 +195,9 @@ rotate: 151.74 deg;
 
   }
 
-  .icon{
-    >img{
-      width: 30px !important;
-      height: 30px;
-    }
-  }
-
   .skill-container {
     width: 320px;
     padding-right: 20px;
-  }
-
-  .get-in-touch-btn {
-    padding-left: 0;
   }
 }
 @media (max-width: 350px) {
