@@ -1,0 +1,146 @@
+@import "../../../styles.scss";
+
+.content {
+  @include dFlex();
+  flex-direction: row;
+}
+
+.left-side {
+  @include dFlex();
+  width: 50%;
+  opacity: 0;
+}
+
+.right-side {
+  display: flex;
+  width: 513px;
+  flex-direction: column;
+  justify-content: start;
+  opacity: 0;
+}
+
+.project-name {
+  color: $lightBlue;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.used-language {
+  color: $darkBlue;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.description {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.live-btn {
+  text-decoration: none;
+  @include dFlex();
+  width: 152px;
+  height: 58px;
+  background-color: $lightBlue;
+  color: white;
+  border-radius: 10px;
+  padding: 15px, 30px, 15px, 30px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $darkBlue;
+  }
+}
+
+.git-btn {
+  text-decoration: none;
+  @include dFlex();
+  width: 152px;
+  height: 58px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid $darkBlue;
+  padding: 15px, 30px, 15px, 30px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $darkBlue;
+  }
+}
+
+.animation-class-left {
+  animation: waving-left 1s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes waving-left {
+  0% {
+    opacity: 0;
+    scale: 0.3;
+    transform: translateX(-450px) translateY(250px);
+  }
+}
+
+.animation-class-right {
+  animation: waving-right 1s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes waving-right {
+  0% {
+    opacity: 0;
+    scale: 0.3;
+    transform: translateX(450px) translateY(-250px);
+  }
+}
+
+@media (max-width: 1500px) {
+  .left-side {
+    > img {
+      width: 320px;
+      height: 320px;
+    }
+  }
+
+  .right-side {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .right-side {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .right-side {
+    width: 250px;
+    margin: 0;
+  }
+
+  .left-side {
+    width: 250px;
+    margin: 0;
+
+    > img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  .live-btn,
+  .git-btn {
+    width: 120px;
+  }
+}
