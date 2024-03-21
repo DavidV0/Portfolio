@@ -1,1 +1,27 @@
-<p>skills works!</p>
+<div class="container">
+  <app-button [text]="text" class="btn  bot"></app-button>
+  <div id="skills" class="left">
+    <div class="icon-wrapper">
+      @for (icon of icons; track icon; let i = $index) {
+      <app-icon [src]="icons[i].src" [name]="icons[i].name"></app-icon>
+      }
+    </div>
+  </div>
+  <div class="right">
+    <div class="right-content">
+        <div class="title">
+          <h2 class="my-skills">My skills</h2>
+          <div class="line"></div>
+        </div>
+        <div class="description">
+          I have grown my frontend developments skills that have allowed me to
+          create different real projects.
+        </div>
+        <app-button [text]="text" class="btn  top"></app-button>
+    </div>
+  </div>
+
+  <div class="shadow-green">
+    <img src="../../assets/img/background-shapes/GReen shadow (1).png" alt="" />
+  </div>
+</div>

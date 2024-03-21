@@ -10,11 +10,11 @@
     </div>
 
     <div (click)="clickEvent(1)" [ngClass]="skills ? 'active' : 'link'">
-      <a href="#" class="link">Skills</a>
+      <a href="#skills" class="link">Skills</a>
       <div></div>
     </div>
     <div (click)="clickEvent(2)" [ngClass]="portfolio ? 'active' : 'link'">
-      <a href="#" class="link">Portfolio</a>
+      <a href="#portfolio" class="link">Portfolio</a>
       <div></div>
     </div>
   </div>
@@ -29,16 +29,16 @@
 <div class="overlay" [ngClass]="{ active: showOverlay }">
   <div id="menu">
     <div class="links-mobile">
-      <a>About  me</a>
+      <a href="#about-me">About  me</a>
     </div>
     <div class="links-mobile">
-      <a>Skills</a>
+      <a href="#skills">Skills</a>
     </div>
     <div class="links-mobile">
-      <a>Portfolio</a>
+      <a href="#portfolio">Portfolio</a>
     </div>
     <div class="links-mobile">
-      <a >Contact</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </div>
