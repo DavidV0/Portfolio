@@ -3,20 +3,19 @@
 .content {
   @include dFlex();
   flex-direction: row;
+  width: 100%;
 }
 
 .left-side {
   @include dFlex();
   width: 50%;
-  opacity: 0;
 }
 
 .right-side {
   display: flex;
-  width: 513px;
+  width: 50%;
   flex-direction: column;
   justify-content: start;
-  opacity: 0;
 }
 
 .project-name {
@@ -75,31 +74,13 @@
   }
 }
 
-.animation-class-left {
-  animation: waving-left 1s ease-in-out;
-  opacity: 1;
-}
 
-@keyframes waving-left {
-  0% {
-    opacity: 0;
-    scale: 0.3;
-    transform: translateX(-450px) translateY(250px);
-  }
-}
 
-.animation-class-right {
-  animation: waving-right 1s ease-in-out;
-  opacity: 1;
-}
 
-@keyframes waving-right {
-  0% {
-    opacity: 0;
-    scale: 0.3;
-    transform: translateX(450px) translateY(-250px);
-  }
-}
+
+
+
+
 
 @media (max-width: 1500px) {
   .left-side {
@@ -109,9 +90,7 @@
     }
   }
 
-  .right-side {
-    width: 400px;
-  }
+
 }
 
 @media (max-width: 900px) {
@@ -125,13 +104,8 @@
 }
 
 @media (max-width: 500px) {
-  .right-side {
-    width: 250px;
-    margin: 0;
-  }
 
   .left-side {
-    width: 250px;
     margin: 0;
 
     > img {

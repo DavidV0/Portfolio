@@ -1,0 +1,164 @@
+@import "../../../styles.scss";
+
+.container {
+  position: relative;
+}
+
+form {
+  @include dFlex();
+  flex-direction: column;
+  width: 100%;
+
+  .validity-check {
+    color: red;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    width: 100%;
+  }
+}
+
+.invalid-input {
+  background-image: url(../../../assets/img/inputerror.png);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid;
+  border-color: red !important;
+}
+
+[type="checkbox"] {
+  position: relative;
+  z-index: 1;
+}
+
+[type="checkbox"] {
+  position: absolute;
+  left: -30px;
+  bottom: 125px;
+  z-index: 0;
+}
+
+[type="checkbox"]::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  border: 2px solid $darkBlue;
+  background-color: #fff;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 5px;
+  z-index: 5;
+  position: relative;
+}
+
+[type="checkbox"]:checked::before {
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  background-color: $lightBlue;
+}
+
+.input-field {
+  background-color: $backgroundColor;
+  color: white;
+  border: 1px solid $darkBlue;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 25px 15px 25px;
+  font-family: "Poppins";
+  outline: none;
+
+  &:focus {
+    border-color: $lightBlue;
+  }
+
+  &::placeholder {
+    color: white;
+  }
+
+  &.ng-valid {
+    border: 1px solid $lightBlue;
+    background-image: url(../../../assets/img/inputvalid.png);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.overlay-email {
+  position: absolute;
+  top: 0;
+  left: -26px;
+  color: white;
+  @include dFlex();
+  width: 100%;
+  padding: 15px 25px 15px 25px;
+  height: 100%;
+  background-color: $lightBlue;
+  border: 1px solid $darkBlue;
+  border-radius: 10px;
+}
+
+.privacy-policy {
+  @include dFlex;
+  flex-direction: column;
+  color: white;
+
+  a {
+    color: $darkBlue;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+
+    &:hover {
+      filter: contrast(2);
+    }
+  }
+}
+
+.submit-btn {
+  width: 250;
+  height: 60;
+  border-radius: 10px;
+  padding: 15px 30px 15px 30px;
+  font-size: 23px;
+  font-weight: 400px;
+  background-color: #b6b6b6 0.25;
+  cursor: pointer;
+  color: white;
+
+  &:active:not(:disabled) {
+    background-color: $darkBlue !important;
+    scale: (1.3);
+
+    &:hover:not(:disabled) {
+      scale: (1.3);
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #pp-checkbox {
+    bottom: 170px;
+  }
+}
+
+@media (max-width: 650px) {
+  #pp-checkbox {
+    bottom: 195px;
+  }
+}
+@media (max-width: 507px) {
+  #pp-checkbox {
+    bottom: 220px;
+  }
+}
+@media (max-width: 320px) {
+  .submit-btn {
+    margin-bottom: 100px;
+  }
+
+  #pp-checkbox {
+    bottom: 270px;
+  }
+}

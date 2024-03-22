@@ -1,23 +1,29 @@
 <div class="portfolio-content">
-    <div class="portfolio-heading">
-      <div id="portfolio" class="portfolio-headline">
-        <img src="" alt="" />
+  <div class="portfolio-heading">
+    <div id="portfolio" class="portfolio-headline">
+      <div>
+        <div class="line1"></div>
         <span>Portfolio</span>
-        <img src="" alt="" />
       </div>
-      <span class="portfolio-text">Explore a selection of my work here - Interact with projects to see my skills in action.</span>
+      <div class="line2"></div>
     </div>
-    <div class="project-wrapper">
-      @for (project of projects; track project; let i = $index) {
-      <app-projects [src]="projects[i].src" [name]="projects[i].name"
-        [language]="projects[i].language" [description]="'portfolio.description' + i "
-        [link]="projects[i].link" [github]="projects[i].github"></app-projects>
-      }
-    </div>
-    <div class="purple-shadow-top">
-      <img src="" alt="" />
-    </div>
-    <div class="green-shadow-bottom">
-      <img src="" alt="" />
-    </div>
+    <span class="portfolio-decsription"
+      >Explore a selection of my work here - Interact with projects to see my
+      skills in action.</span
+    >
   </div>
+  <div class="project-wrapper">
+    @for (project of projects; track project; let i = $index) {
+    <app-projects
+      [src]="projects[i].src"
+      [name]="projects[i].name"
+      [language]="projects[i].language"
+      [description]="projects[i].description"
+      [link]="projects[i].link"
+      [github]="projects[i].github"
+    >
+    </app-projects>
+    }
+  </div>
+  
+</div>

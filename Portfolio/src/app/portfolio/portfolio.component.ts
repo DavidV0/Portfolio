@@ -14,19 +14,19 @@ export class PortfolioComponent {
     {
       name: 'Join',
       language: 'JavaScript, HTML, CSS',
-      description: '',
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
       link: '',
       github: '',
-      src: '',
+      src: '../../assets/img/join photo (1).png',
     },
     {
       name: 'El Pollo Loco',
       language: 'JavaScript, HTML, CSS',
-      description: '',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.',
       link:
         '',
         github: '',
-      src: '',
+      src: '../../assets/img/Pollo loco 1.png',
     },
   ];
 }
