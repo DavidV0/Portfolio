@@ -1,14 +1,12 @@
 @import "../../styles.scss";
 
 .container {
-
-  width: 100vw;
   max-width: 1440px;
   @include dFlex();
   color: white;
 }
 
-.left{
+.left {
   width: 50%;
   @include dFlex();
 }
@@ -60,8 +58,6 @@
   border: 2px solid $darkBlue;
 }
 
-
-
 .description {
   width: 70%;
   font-size: 16px;
@@ -82,30 +78,25 @@
 
 .background-image img {
   position: absolute;
-  
-  width: 428.59px;
-height: 951.44px;
-top: 1582.96px;
-left: -221.49px;
-gap: 0px;
-opacity: 0.7;
-rotate: 151.74 deg;
-
+  left: 0;
+  opacity: 0.7;
+  rotate: 151.74 deg;
+  z-index: -1;
 }
 
-.bot{
+.bot {
   display: none;
 }
 
-@media (min-width: 1350px){
-  .top{
+@media (min-width: 1350px) {
+  .top {
     display: block;
   }
 
-  .bot{display: none;}
+  .bot {
+    display: none;
+  }
 }
-
-
 
 @media (max-width: 1500px) {
   .icon-wrapper {
@@ -119,17 +110,19 @@ rotate: 151.74 deg;
     flex-direction: column-reverse;
   }
 
-  .top{
+  .top {
     display: none;
   }
 
-  .bot{display: block;}
+  .bot {
+    display: block;
+  }
 
   .left {
     margin-left: 0px;
   }
 
-  .right{
+  .right {
     width: 100%;
     margin: 0;
     padding-bottom: 100px;
@@ -152,8 +145,8 @@ rotate: 151.74 deg;
     text-align: center;
   }
 }
-@media (max-width: 760px){
-  .left{
+@media (max-width: 760px) {
+  .left {
     width: 70vw;
   }
 }
@@ -164,16 +157,14 @@ rotate: 151.74 deg;
     text-align: end;
   }
 
-
   .background-image img {
-  
     height: 700px;
     width: 320px;
   }
 }
 
 @media (max-width: 550px) {
-  .left{
+  .left {
     width: 90vw;
   }
   .img-box {
@@ -192,7 +183,6 @@ rotate: 151.74 deg;
 
   .icon-wrapper {
     gap: 30px;
-
   }
 
   .skill-container {

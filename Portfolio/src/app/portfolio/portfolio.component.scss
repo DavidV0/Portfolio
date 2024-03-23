@@ -1,7 +1,6 @@
 @import "../../styles.scss";
 
 .portfolio-content {
-  position: relative;
   max-width: 1440px;
 }
 
@@ -35,6 +34,15 @@
     flex-direction: row-reverse !important;
     }
   }
+}
+
+.background-image{
+  position: absolute;
+  top: 0;
+  right: 100px;
+  margin-right: -80px;
+  z-index: -1;
+  opacity: 0.85;
 }
 
 .line1{

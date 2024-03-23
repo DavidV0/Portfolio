@@ -1,109 +1,115 @@
 <div class="container">
-    <form
-      (ngSubmit)="onSubmit(contactForm)"
-      onsubmit="return false"
-      #contactForm="ngForm"
+  <form
+    (ngSubmit)="onSubmit(contactForm)"
+    onsubmit="return false"
+    #contactForm="ngForm"
+  >
+    <input
+      type="text"
+      #name="ngModel"
+      id="name"
+      [(ngModel)]="contactData.name"
+      [ngClass]="{ 'invalid-input': name?.invalid && name?.touched }"
+      name="name"
+      placeholder="Your name"
+      required
+      class="input-field"
+    />
+    <div
+      class="validity-check"
+      [style.opacity]="name.invalid && name.touched ? '1' : 0"
     >
-      <input
-        type="text"
-        #name="ngModel"
-        id="name"
-        [(ngModel)]="contactData.name"
-        [ngClass]="{ 'invalid-input': name?.invalid && name?.touched }"
-        name="name"
-        placeholder="{{ 'contactform.placeholderName' }}"
-        required
-        class="input-field"
-      />
-      <div
-        class="validity-check"
-        [style.opacity]="name.invalid && name.touched ? '1' : 0"
-      >
-        {{ "contactform.name" }}
-      </div>
-  
-      <input
-        type="email"
-        id="email"
-        #email="ngModel"
-        [(ngModel)]="contactData.email"
-        [ngClass]="{ 'invalid-input': email?.invalid && email?.touched }"
-        email
-        name="email"
-        placeholder="{{ 'contactform.placeholderEmail'  }}"
-        required
-        class="input-field"
-      />
-      <div
-        class="validity-check"
-        [style.opacity]="email.invalid && email.touched ? '1' : 0"
-      >
-        {{ "contactform.email"  }}
-      </div>
-  
-      <textarea
-        #message="ngModel"
-        id="message"
-        minlength="2"
-        class="input-field"
-        [ngClass]="{ 'invalid-input': message?.invalid && message?.touched }"
-        name="message"
-        placeholder="{{ 'contactform.placeholderMessage' }}"
-        [(ngModel)]="contactData.message"
-        style="height: 200px"
-        required
-      ></textarea>
-      <div
-        class="validity-check"
-        [style.opacity]="message.invalid && message.touched ? '1' : 0"
-      >
-        {{ "contactform.message"  }}
-      </div>
-  
-      <div class="privacy-policy">
-        <input
-          type="checkbox"
-          id="pp-checkbox"
-          required
-          #checkbox
-          [(ngModel)]="checkboxState"
-          name="checkboxState"
-        />
-        <div>
-          {{ "contactform.privacy1" 
-          }}<a style="cursor: pointer;" routerLink="/privacyPolicy" (click)="scrollToTop()">{{ "contactform.privacy2"  }}</a
-          >{{ "contactform.privacy3" }}
-        </div>
-  
-        <div
-          class="validity-check"
-          [style.opacity]="
-            !email.invalid &&
-            !name.invalid &&
-            !message.invalid &&
-            !checkbox?.checked
-              ? 1
-              : 0
-          "
-        >
-          {{ "contactform.privacy4"  }}
-        </div>
-      </div>
-  
-      <input
-        type="submit"
-        value="{{ 'contactform.sending' }}"
-        name="submitButton"
-        [disabled]="!checkboxState && email.valid && name.valid && !email.valid"
-        class="submit-btn"
-        [style.background-color]="
-          checkboxState && email?.valid && name?.valid && message?.valid
-            ? '#70E61C'
-            : '#b6b6b6'
-        "
-      />
-    </form>
-    <div class="overlay-email" id="overlay-email" style="opacity: 0; z-index: -1">
-      {{ "contactform.privacy5" }}
+    Your name is required
     </div>
+
+    <input
+      type="email"
+      id="email"
+      #email="ngModel"
+      [(ngModel)]="contactData.email"
+      [ngClass]="{ 'invalid-input': email?.invalid && email?.touched }"
+      email
+      name="email"
+      placeholder="Your email"
+      required
+      class="input-field"
+    />
+    <div
+      class="validity-check"
+      [style.opacity]="email.invalid && email.touched ? '1' : 0"
+    >
+      Your email is required
+    </div>
+
+    <textarea
+      #message="ngModel"
+      id="message"
+      minlength="2"
+      class="input-field"
+      [ngClass]="{ 'invalid-input': message?.invalid && message?.touched }"
+      name="message"
+      placeholder="Your message"
+      [(ngModel)]="contactData.message"
+      style="height: 200px"
+      required
+    ></textarea>
+    <div
+      class="validity-check"
+      [style.opacity]="message.invalid && message.touched ? '1' : 0"
+    >
+      Your message is empty
+    </div>
+
+    <div class="privacy-policy">
+      <div class="checkbox">
+        <input
+        type="checkbox"
+        id="pp-checkbox"
+        required
+        #checkbox
+        [(ngModel)]="checkboxState"
+        name="checkboxState"
+      />
+      </div>
+      
+      <div class="privacy">
+        I've read the
+        <a style="cursor: pointer" routerLink="/privacyPolicy"
+          >privacy-policy</a
+        >
+        and agree to the processing of my data as outlined.
+        <div
+        class="validity-check"
+        [style.opacity]="
+          !email.invalid &&
+          !name.invalid &&
+          !message.invalid &&
+          !checkbox?.checked
+            ? 1
+            : 0
+        "
+      >
+        Please accept the privacy policy
+      </div>
+      </div>
+
+   
+    </div>
+
+    <input
+      type="submit"
+      value="Send  message"
+      name="submitButton"
+      [disabled]="!checkboxState && email.valid && name.valid && !email.valid"
+      class="submit-btn"
+      [style.background-color]="
+        checkboxState && email?.valid && name?.valid && message?.valid
+          ? '#70E61C'
+          : '#b6b6b6'
+      "
+    />
+  </form>
+  <div class="overlay-email" id="overlay-email" style="opacity: 0; z-index: -1">
+    {{ "contactform.privacy5" }}
   </div>
+</div>

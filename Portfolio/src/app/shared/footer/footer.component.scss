@@ -1,16 +1,18 @@
 @import "../../../styles.scss";
 
 .container {
+  margin-top: 10vh;
   height: 20vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  border-top: 2px solid;
+  border-top: 4px solid;
   border-color: $lightBlue;
   background-color: $backgroundColor;
   max-width: 1440px;
+  z-index: 3;
 }
 .name {
   font-size: 48px;

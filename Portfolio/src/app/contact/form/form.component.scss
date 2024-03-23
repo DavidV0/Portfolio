@@ -22,42 +22,38 @@ form {
 }
 
 .invalid-input {
-  background-image: url(../../../assets/img/inputerror.png);
   background-position: 95% 50%;
   background-repeat: no-repeat;
   border: 1px solid;
   border-color: red !important;
+  background-image: url("../../../assets/img/Vectorinvalid.png");
+
 }
 
-[type="checkbox"] {
-  position: relative;
-  z-index: 1;
-}
+
 
 [type="checkbox"] {
-  position: absolute;
-  left: -30px;
-  bottom: 125px;
+  display: block;
+  background-image: url("../../../assets/img/check_box_outline_blank.png");
+  border: 2px solid $lightBlue;
   z-index: 0;
+
 }
 
 [type="checkbox"]::before {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border-radius: 5px;
-  border: 2px solid $darkBlue;
-  background-color: #fff;
   display: block;
-  content: "";
   float: left;
   margin-right: 5px;
   z-index: 5;
   position: relative;
+
 }
 
 [type="checkbox"]:checked::before {
-  box-shadow: inset 0px 0px 0px 3px #fff;
-  background-color: $lightBlue;
+  background-image: url("../../../assets/img/check_box.png");
 }
 
 .input-field {
@@ -67,7 +63,6 @@ form {
   border-radius: 10px;
   width: 100%;
   padding: 15px 25px 15px 25px;
-  font-family: "Poppins";
   outline: none;
 
   &:focus {
@@ -80,9 +75,9 @@ form {
 
   &.ng-valid {
     border: 1px solid $lightBlue;
-    background-image: url(../../../assets/img/inputvalid.png);
     background-position: 95% 50%;
     background-repeat: no-repeat;
+    background-image: url("../../../assets/img/Vectorvalid.png");
   }
 }
 
@@ -102,11 +97,13 @@ form {
 
 .privacy-policy {
   @include dFlex;
-  flex-direction: column;
+  flex-direction: row;
   color: white;
+  align-items: start;
+ 
 
   a {
-    color: $darkBlue;
+    color: $lightBlue;
     text-decoration: none;
     text-shadow: black 0.1em 0.1em 0.2em;
 
@@ -114,6 +111,19 @@ form {
       filter: contrast(2);
     }
   }
+}
+
+.checkbox{
+  padding-top: 5px;
+  @include dFlex();
+  justify-content: center;
+  width: 20px;
+  height: 100%;
+}
+
+.privacy{
+  width: 90%;
+  margin-left: 4px;
 }
 
 .submit-btn {
@@ -140,6 +150,16 @@ form {
 @media (max-width: 750px) {
   #pp-checkbox {
     bottom: 170px;
+  }
+  form{
+    justify-content: center;
+  }
+  .input-field{
+    width: 80%;
+  }
+
+  .privacy-policy{
+    width: 80%;
   }
 }
 
