@@ -38,10 +38,12 @@
 
 .background-image{
   position: absolute;
-  top: 0;
-  right: 100px;
-  margin-right: -80px;
-  z-index: -1;
+  width: 500px;
+  height: 500px;
+  top: 3300px;
+  right: 0;
+  z-index: -2;
+  transform: rotate(90deg);
   opacity: 0.85;
 }
 
@@ -85,6 +87,18 @@
   .portfolio-headline {
     margin-top: 150px;
   }
+
+  .background-image{
+    top: 3600px;
+    left: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .background-image{
+    top: 4200px;
+    left: 600px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -100,6 +114,10 @@
     font-size: 46px;
   }
 
+  .background-image{
+    top: 4000px;
+    left: 400px;
+  }
 
  
 }
@@ -120,5 +138,12 @@
   }
   .portfolio-decsription {
     margin: 0 10px 0 10px;
+  }
+}
+
+@media ( max-widt: 360px){
+  .background-image{
+    top: 5000px;
+    left: 300px;
   }
 }

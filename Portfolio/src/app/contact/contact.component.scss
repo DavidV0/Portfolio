@@ -18,11 +18,16 @@
 }
 
 .background-image{
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-  margin-bottom: -13vh;
+
+  >img{
+    position: absolute;
+ 
+    top: 4100px;
+    left: 10px;
+    z-index: -1;
+    height: 500px;
+    width: 500px;
+  }
 }
 
 .content {
@@ -125,6 +130,10 @@ justify-content: center;  }
       text-decoration: none;
       color: $lightBlue;
     }
+  }
+
+  .background-image{
+    top: 3600px;
   }
 }
 
