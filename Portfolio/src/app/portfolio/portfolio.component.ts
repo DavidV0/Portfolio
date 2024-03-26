@@ -17,7 +17,7 @@ export class PortfolioComponent {
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
       link: '',
       github: '',
-      src: '../../assets/img/join photo (1).png',
+      src: '../../assets/img/Pollo loco 2.png',
     },
     {
       name: 'El Pollo Loco',

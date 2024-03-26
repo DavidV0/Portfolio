@@ -191,4 +191,16 @@ justify-content: center;  }
     }
 
   }
+
+
+}
+
+@media (max-width: 450px) {
+  .background-image{
+    top: 4200px;
+
+    >img{
+      width: 100%;
+    }
+  }
 }

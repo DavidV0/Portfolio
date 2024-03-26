@@ -17,6 +17,10 @@
       <a href="#portfolio" class="link">Portfolio</a>
       <div></div>
     </div>
+    <div (click)="clickEvent(3)" [ngClass]="contact ? 'active' : 'link'">
+      <a href="#contact" class="link">Contact</a>
+      <div></div>
+    </div>
   </div>
   <div id="menu-toggle" (click)="openMobileMenu()">
     <input type="checkbox" #checkbox />
