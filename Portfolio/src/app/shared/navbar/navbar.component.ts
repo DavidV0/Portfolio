@@ -48,4 +48,11 @@ export class NavbarComponent {
       document.body.style.overflow = 'auto';
     }
   }
+
+  goTo(destination: string) {
+    let target = document.querySelector(destination);
+    if (target) {
+      target.scrollIntoView();
+    }
+  }
 }
