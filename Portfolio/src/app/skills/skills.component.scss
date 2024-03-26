@@ -1,7 +1,8 @@
 @import "../../styles.scss";
 
 .container {
-  max-width: 1440px;
+  width: 100vw;
+    max-width: 1440px;
   @include dFlex();
   color: white;
 }

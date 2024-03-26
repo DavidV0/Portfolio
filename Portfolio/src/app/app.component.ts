@@ -7,11 +7,14 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+import { ImprintComponent } from './shared/imprint/imprint.component';
+import { PrivacyPolicyComponent } from './contact/privacy-policy/privacy-policy.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, AboveTheFoldComponent, ContactComponent, FooterComponent, PortfolioComponent, AboutMeComponent, SkillsComponent],
+  imports: [RouterOutlet, LandingpageComponent, NavbarComponent, AboveTheFoldComponent, ContactComponent, FooterComponent, PortfolioComponent, AboutMeComponent, SkillsComponent, ImprintComponent, PrivacyPolicyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

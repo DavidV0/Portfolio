@@ -13,6 +13,13 @@ import { CommonModule } from '@angular/common';
 export class SkillsComponent {
   text = "Get in touch"
 
+  goTo(destination: string) {
+    let target = document.querySelector(destination);
+    if (target) {
+      target.scrollIntoView();
+    }
+  }
+  
   icons = [
     {
       src: '../../assets/img/icons/Angular.png',
