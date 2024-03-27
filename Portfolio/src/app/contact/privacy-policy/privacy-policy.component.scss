@@ -1,0 +1,15 @@
+@import url("./../../../styles.scss");
+
+
+.container{
+    margin-top: 10vh;
+    color: white;
+    max-width: 1440px;
+    width: 100vw;
+}
+
+@media (max-width: 600px){
+        .container{
+            width: 80vw;
+        }
+}
