@@ -15,7 +15,7 @@ export class PortfolioComponent {
       name: 'Join',
       language: 'JavaScript, HTML, CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
-      link: '',
+      link: 'https://www.david-velickovic.at/projects/Join/index.html',
       github: '',
       src: '../../assets/img/Pollo loco 2.png',
     },
