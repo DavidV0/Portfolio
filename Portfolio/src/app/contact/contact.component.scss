@@ -91,6 +91,11 @@
     filter: drop-shadow(1px 1px 5px $lightBlue);
     scale: 1.3;
   }
+
+  >img{
+  margin-right: 20px;
+
+  }
 }
 
 @keyframes pulsation {

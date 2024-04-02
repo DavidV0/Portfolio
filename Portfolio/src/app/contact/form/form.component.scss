@@ -147,10 +147,22 @@ form {
   }
 }
 
-@media (max-width: 750px) {
-  #pp-checkbox {
-    bottom: 170px;
+@media (max-width: 1200px){
+  form{
+    justify-content: center;
   }
+
+  .input-field{
+    width: 80%;
+  }
+
+  .privacy-policy{
+    width: 80%;
+  }
+} 
+
+@media (max-width: 750px) {
+ 
   form{
     justify-content: center;
   }
@@ -163,22 +175,22 @@ form {
   }
 }
 
-@media (max-width: 650px) {
-  #pp-checkbox {
-    bottom: 195px;
-  }
-}
-@media (max-width: 507px) {
-  #pp-checkbox {
-    bottom: 220px;
-  }
-}
+
 @media (max-width: 320px) {
   .submit-btn {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+  }
+  form{
+    justify-content: center;
   }
 
-  #pp-checkbox {
-    bottom: 270px;
+  .input-field{
+    width: 80%;
   }
+
+  .privacy-policy{
+    width: 80%;
+  }
+
+ 
 }

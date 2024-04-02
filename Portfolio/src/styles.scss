@@ -4,10 +4,9 @@
   font-family: poppins-regular;
 }
 
-$lightBlue: #00BEE8;
+$lightBlue: #00bee8;
 $darkBlue: #4b47ff;
 $backgroundColor: #141d2f;
-
 
 @mixin dFlex() {
   display: flex;
@@ -30,7 +29,7 @@ html {
   font-family: "Poppins";
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
-    width: 10px;
+    width: auto;
     background: $darkBlue;
     height: 100%;
   }
@@ -45,8 +44,12 @@ html {
   }
 }
 
+@media (max-width: 450px) {
+  html {
+    overflow-y: overlay;
 
-
+  }
+}
 
 @font-face {
   font-family: poppins-regular;
@@ -69,9 +72,6 @@ html {
 }
 
 @font-face {
-    font-family: poppins-medium;
-    src: url(../src/assets/fonts/Poppins-Medium.ttf) format("opentype");
-  }
-
-
-
+  font-family: poppins-medium;
+  src: url(../src/assets/fonts/Poppins-Medium.ttf) format("opentype");
+}
