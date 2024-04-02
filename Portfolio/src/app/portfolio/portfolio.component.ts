@@ -16,7 +16,7 @@ export class PortfolioComponent {
       language: 'JavaScript, HTML, CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
       link: 'https://www.david-velickovic.at/projects/Join/index.html',
-      github: '',
+      github: 'https://github.com/DavidV0/Join',
       src: '../../assets/img/Pollo loco 2.png',
     },
     {
@@ -24,8 +24,8 @@ export class PortfolioComponent {
       language: 'JavaScript, HTML, CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.',
       link:
-        '',
-        github: '',
+        'https://www.david-velickovic.at/projects/el-pollo-loco/index.html',
+        github: 'https://github.com/DavidV0/EPL',
       src: '../../assets/img/Pollo loco 1.png',
     },
   ];
