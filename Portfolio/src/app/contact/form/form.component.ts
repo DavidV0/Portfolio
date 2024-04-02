@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterLink],
+  imports: [FormsModule, CommonModule, RouterLink, TranslateModule],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss',
 })
@@ -33,7 +34,7 @@ export class FormComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://meineDomain.de/sendMail.php',
+    endPoint: 'https://david-velickovic.at/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

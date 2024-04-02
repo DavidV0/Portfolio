@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { TranslateModule } from '@ngx-translate/core';
+import { AppComponent } from '../../app.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, CommonModule],
+  imports: [RouterLink, CommonModule, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -14,6 +15,11 @@ export class NavbarComponent {
   skills: boolean = false;
   portfolio: boolean = false;
   contact: boolean = false;
+
+  @Input() language = 'DE';
+
+  constructor(private appComponent: AppComponent){}
+
   clickEvent(id: number) {
     if (id == 0) {
       this.about = !this.about;
@@ -53,6 +59,19 @@ export class NavbarComponent {
     let target = document.querySelector(destination);
     if (target) {
       target.scrollIntoView();
+    }
+  }
+  translating() {
+    this.language = this.language === 'DE' ? 'EN' : 'DE';
+    this.appComponent.translate.setDefaultLang(this.language.toLowerCase());
+    let language = document.getElementById('.len')?.innerText;
+    let english = "EN"
+    let german = "DE"
+    if (this.language === 'DE') {
+      language = german;
+    } else {
+      language = english
+      this.language = 'EN';
     }
   }
 }

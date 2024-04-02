@@ -133,6 +133,14 @@ $grey: #141D2F;
 
 }
 
+.language {
+  text-align: center;
+ 
+  color: $lightBlue;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 #menu-toggle{
   display: none;
   position: relative;

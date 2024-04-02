@@ -11,7 +11,7 @@
       [(ngModel)]="contactData.name"
       [ngClass]="{ 'invalid-input': name?.invalid && name?.touched }"
       name="name"
-      placeholder="Your name"
+      placeholder="{{ 'contactform.placeholderName' | translate }}"
       required
       class="input-field"
     />
@@ -19,7 +19,7 @@
       class="validity-check"
       [style.opacity]="name.invalid && name.touched ? '1' : 0"
     >
-    Your name is required
+      {{ "contactform.name" | translate }}
     </div>
 
     <input
@@ -30,7 +30,7 @@
       [ngClass]="{ 'invalid-input': email?.invalid && email?.touched }"
       email
       name="email"
-      placeholder="Your email"
+      placeholder="{{ 'contactform.placeholderEmail' | translate }}"
       required
       class="input-field"
     />
@@ -38,7 +38,7 @@
       class="validity-check"
       [style.opacity]="email.invalid && email.touched ? '1' : 0"
     >
-      Your email is required
+      {{ "contactform.email" | translate }}
     </div>
 
     <textarea
@@ -48,7 +48,7 @@
       class="input-field"
       [ngClass]="{ 'invalid-input': message?.invalid && message?.touched }"
       name="message"
-      placeholder="Your message"
+      placeholder="{{ 'contactform.placeholderMessage' | translate }}"
       [(ngModel)]="contactData.message"
       style="height: 200px"
       required
@@ -57,43 +57,43 @@
       class="validity-check"
       [style.opacity]="message.invalid && message.touched ? '1' : 0"
     >
-      Your message is empty
+    {{ "contactform.message" | translate }}
     </div>
 
     <div class="privacy-policy">
       <div class="checkbox">
         <input
-        type="checkbox"
-        id="pp-checkbox"
-        required
-        #checkbox
-        [(ngModel)]="checkboxState"
-        name="checkboxState"
-      />
-      </div>
-      
-      <div class="privacy">
-        I've read the
-        <a style="cursor: pointer" routerLink="/privacyPolicy"
-          >privacy-policy</a
-        >
-        and agree to the processing of my data as outlined.
-        <div
-        class="validity-check"
-        [style.opacity]="
-          !email.invalid &&
-          !name.invalid &&
-          !message.invalid &&
-          !checkbox?.checked
-            ? 1
-            : 0
-        "
-      >
-        Please accept the privacy policy
-      </div>
+          type="checkbox"
+          id="pp-checkbox"
+          required
+          #checkbox
+          [(ngModel)]="checkboxState"
+          name="checkboxState"
+        />
       </div>
 
-   
+      <div class="privacy">
+        {{ "contactform.privacy1" | translate
+      }}
+        <a style="cursor: pointer" routerLink="/privacyPolicy"
+          >
+          {{ "contactform.privacy2" | translate }}</a
+        >
+        {{ "contactform.privacy3" | translate }}
+        <div
+          class="validity-check"
+          [style.opacity]="
+            !email.invalid &&
+            !name.invalid &&
+            !message.invalid &&
+            !checkbox?.checked
+              ? 1
+              : 0
+          "
+        >
+        {{ "contactform.privacy4" | translate }}
+        </div>
+      </div>
     </div>
 
     <input
@@ -110,6 +110,6 @@
     />
   </form>
   <div class="overlay-email" id="overlay-email" style="opacity: 0; z-index: -1">
-    {{ "contactform.privacy5" }}
+    {{ "contactform.privacy5" | translate}}
   </div>
 </div>

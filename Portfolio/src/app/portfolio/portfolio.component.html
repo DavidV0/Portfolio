@@ -8,8 +8,7 @@
       <div class="line2"></div>
     </div>
     <span class="portfolio-decsription"
-      >Explore a selection of my work here - Interact with projects to see my
-      skills in action.</span
+      >{{"portfolio.description" | translate}}</span
     >
   </div>
   <div class="project-wrapper">
@@ -18,7 +17,7 @@
       [src]="projects[i].src"
       [name]="projects[i].name"
       [language]="projects[i].language"
-      [description]="projects[i].description"
+      [description]="'portfolio.project' + i | translate"
       [link]="projects[i].link"
       [github]="projects[i].github"
     >

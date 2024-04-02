@@ -10,6 +10,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { ImprintComponent } from './shared/imprint/imprint.component';
 import { PrivacyPolicyComponent } from './contact/privacy-policy/privacy-policy.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -20,4 +21,8 @@ import { PrivacyPolicyComponent } from './contact/privacy-policy/privacy-policy.
 })
 export class AppComponent {
 
+    translation = "de";
+    constructor(public translate: TranslateService){
+      translate.setDefaultLang(this.translation)
+    }
 }
