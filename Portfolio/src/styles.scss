@@ -15,21 +15,14 @@ $backgroundColor: #141d2f;
 }
 
 body {
-  margin: auto;
   background-color: #141d2f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1440px;
-  overflow-x: hidden;
+
 }
 
 html {
   font-family: "Poppins";
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
-    width: auto;
     background: $darkBlue;
     height: 100%;
   }
@@ -41,6 +34,13 @@ html {
     border-radius: 8px;
     background-color: $darkBlue;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    overflow-y: overlay;
+
   }
 }
 

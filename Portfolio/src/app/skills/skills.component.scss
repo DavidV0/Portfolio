@@ -1,5 +1,9 @@
 @import "../../styles.scss";
 
+.content{
+  min-height: 50vh;
+  padding-top: 140px;
+}
 .container {
   width: 100vw;
     max-width: 1440px;
@@ -46,9 +50,9 @@
 }
 
 .my-skills {
-  width: 80%;
+  width: 100%;
   color: white;
-  font-size: 90px;
+  font-size: 82px;
   font-weight: 700;
   text-align: end !important;
 }
@@ -106,6 +110,9 @@
 }
 
 @media (max-width: 1350px) {
+  .my-skills{
+    font-size: 86px;
+  }
   .container {
     margin-top: 100px;
     flex-direction: column-reverse;
@@ -154,7 +161,7 @@
 
 @media (max-width: 650px) {
   .my-skills {
-    font-size: 46px;
+    font-size: 42px;
     text-align: end;
   }
 

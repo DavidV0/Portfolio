@@ -1,15 +1,24 @@
 @import "../../../styles.scss";
 
-.container {
-  margin-top: 10vh;
-  width: 100%;
+
+.content {
+  @include dFlex();
+  width: 103vw;
   min-height: 20vh;
+  background-color: $backgroundColor;
+  margin-top: 10vh;
+  border-top: 4px solid;
+  border-color: $lightBlue;
+  z-index: 3;
+
+}
+.container {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  border-top: 4px solid;
-  border-color: $lightBlue;
+  
   background-color: $backgroundColor;
   max-width: 1440px;
   z-index: 3;
@@ -29,7 +38,7 @@
 }
 
 .logo {
-  margin-left: 150px;
+  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -39,7 +48,7 @@
 .symbols {
   @include dFlex();
   gap: 20px;
-  margin-right: 150px;
+  margin-right: 40px;
   align-items: center;
 }
 
@@ -67,6 +76,10 @@
 }
 
 @media (max-width: 650px) {
+  .content{
+    width: 100vw;
+    
+  }
   .container {
     display: flex;
     justify-content: center;

@@ -2,10 +2,18 @@
 
 .portfolio-content {
   max-width: 1440px;
+  width: 100vw;
+}
+
+.portfolio-heading{
+  @include dFlex();
+  flex-direction: column;
 }
 
 .portfolio-headline {
   display: flex;
+  width: 100vw;
+  max-width: 1440px;
   margin-top: 250px;
   display: flex;
   justify-content: center;
@@ -17,7 +25,7 @@
   >div{
    @include dFlex();
    justify-content: end;
-   width: 65%;
+   width: 100%;
   }
 }
 
@@ -47,7 +55,7 @@
 }
 
 .line1{
-  width: 100px;
+  width: 20%;
   height: 0px;
   border: 2px solid $darkBlue;
   margin-right: 30px;
@@ -94,6 +102,11 @@
   .background-image{
     top: 3000px;
     left: 1200px;
+  }
+}
+@media (max-width: 1000px) {
+  .portfolio-decsription{
+    width: 90vw;
   }
 }
 

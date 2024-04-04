@@ -58,7 +58,7 @@ export class NavbarComponent {
   goTo(destination: string) {
     let target = document.querySelector(destination);
     if (target) {
-      target.scrollIntoView();
+      target.scrollIntoView({ behavior: 'smooth' });
     }
   }
   translating() {

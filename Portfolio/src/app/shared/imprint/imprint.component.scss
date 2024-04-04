@@ -1,38 +1,40 @@
 @import "../../../styles.scss";
 
+.content {
+  width: 100vw;
+  @include dFlex();
+  padding-top: 10vh;
+}
 .container {
-    width: 90vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1440px;
 
-    margin-top: 15vh;
- 
-
-    height: 80vh;
-    max-width: 1440px;
-
-    >div{
-        font-family: poppins-light;
-        font-size: 18px;
-        padding-bottom: 24px;
-
-    }
+  > div {
+    font-family: poppins-light;
+    font-size: 18px;
   }
-  
-  * {
-    color: white;
-    > a {
-      color: #9747ff;
-    }
+}
+
+* {
+  color: white;
+  > a {
+    color: #9747ff;
   }
-  
+}
+
+h1 {
+  font-size: 64px;
+}
+@media (max-width: 1440px) {
+  .container {
+    width: 80vw;
+  }
+}
+@media (max-width: 650px) {
   h1 {
-    font-size: 64px;
+    font-size: 38px;
   }
-  @media (max-width: 650px) {
-    .container{
-        width: 90vw;
-        margin-bottom: 25vh;
-    }
-    h1 {
-      font-size: 38px
-    }
-  }
+}

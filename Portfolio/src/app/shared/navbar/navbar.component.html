@@ -1,49 +1,53 @@
-<div class="container">
-  <div routerLink="/"  (click)="goTo('#start')" class="logo">
-    <span>Dav</span><span class="i">i</span>
-    <span class="d">d</span>
-  </div>
-  <div class="links">
-    <div (click)="clickEvent(0)" [ngClass]="about ? 'active' : 'link'">
-      <a href="#about-me" class="link">{{"header.about" | translate}}</a>
-      <div></div>
+<div class="content">
+  <div class="container">
+    <div routerLink="/" (click)="goTo('#start')" class="logo">
+      <span>Dav</span><span class="i">i</span>
+      <span class="d">d</span>
     </div>
+    <div class="links">
+      <div (click)="clickEvent(0)"  [ngClass]="about ? 'active' : 'link'">
+        <a href="#about-me"  class="link">{{ "header.about" | translate }}</a>
+        <div></div>
+      </div>
 
-    <div (click)="clickEvent(1)" [ngClass]="skills ? 'active' : 'link'">
-      <a href="#skills" class="link">Skills</a>
-      <div></div>
+      <div (click)="clickEvent(1)" [ngClass]="skills ? 'active' : 'link'">
+        <a href="#skills" class="link">Skills</a>
+        <div></div>
+      </div>
+      <div (click)="clickEvent(2)" [ngClass]="portfolio ? 'active' : 'link'">
+        <a href="#portfolio" class="link">Portfolio</a>
+        <div></div>
+      </div>
+      <div (click)="clickEvent(3)" [ngClass]="contact ? 'active' : 'link'">
+        <a href="#contact" class="link">{{ "header.contact" | translate }}</a>
+        <div></div>
+      </div>
+      <div class="language" id="len" (click)="translating()">
+        {{ language }}
+      </div>
     </div>
-    <div (click)="clickEvent(2)" [ngClass]="portfolio ? 'active' : 'link'">
-      <a href="#portfolio" class="link">Portfolio</a>
-      <div></div>
+    <div id="menu-toggle" (click)="openMobileMenu()">
+      <input type="checkbox" #checkbox />
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <div (click)="clickEvent(3)" [ngClass]="contact ? 'active' : 'link'">
-      <a href="#contact" class="link">{{"header.contact" | translate}}</a>
-      <div></div>
-    </div>
-    <div class="language" id="len" (click)="translating()">{{ language }}</div>
   </div>
-  <div id="menu-toggle" (click)="openMobileMenu()">
-    <input type="checkbox" #checkbox />
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
 
-<div class="overlay" [ngClass]="{ active: showOverlay }">
-  <div id="menu">
-    <div class="links-mobile">
-      <a href="#about-me">{{"header.about" | translate}}</a>
-    </div>
-    <div class="links-mobile">
-      <a href="#skills">Skills</a>
-    </div>
-    <div class="links-mobile">
-      <a href="#portfolio">Portfolio</a>
-    </div>
-    <div class="links-mobile">
-      <a href="#contact">{{"header.contact" | translate}}</a>
+  <div class="overlay" [ngClass]="{ active: showOverlay }">
+    <div id="menu">
+      <div class="links-mobile">
+        <a href="#about-me">{{ "header.about" | translate }}</a>
+      </div>
+      <div class="links-mobile">
+        <a href="#skills">Skills</a>
+      </div>
+      <div class="links-mobile">
+        <a href="#portfolio">Portfolio</a>
+      </div>
+      <div class="links-mobile">
+        <a href="#contact">{{ "header.contact" | translate }}</a>
+      </div>
     </div>
   </div>
 </div>

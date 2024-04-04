@@ -3,17 +3,18 @@
 .content {
   @include dFlex();
   flex-direction: row;
-  width: 100%;
+  width: 99vw;
+  max-width: 1440px
 }
 
 .left-side {
   @include dFlex();
-  width: 50%;
+  width: 45%;
 }
 
 .right-side {
   display: flex;
-  width: 50%;
+  width: 45%;
   flex-direction: column;
   justify-content: start;
 }
@@ -99,7 +100,7 @@
   }
 
   .right-side {
-    margin-left: 50px;
+   width: 70%;
 
   }
 }
@@ -120,7 +121,7 @@
   }
 
   .right-side {
-  width: 90%;   
+  width: 80%;   
   margin: 0; 
   align-items: center;
   }

@@ -1,6 +1,8 @@
-<div class="container">
-  <app-button [text]="text" class="btn  bot"></app-button>
-  <div id="skills" class="left">
+<div class="content" id="skills"  >
+
+<div  class="container">
+  <app-button (click)="goTo('#contact')" [text]="text" class="btn  bot"></app-button>
+  <div class="left">
     <div class="icon-wrapper">
       @for (icon of icons; track icon; let i = $index) {
       <app-icon [src]="icons[i].src" [name]="icons[i].name"></app-icon>
@@ -24,3 +26,5 @@
     <img src="../../assets/img/background-shapes/GReen shadow (1).png" alt="" />
   </div>
 </div>
+</div>
+

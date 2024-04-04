@@ -1,5 +1,10 @@
 @import "../../styles.scss";
 
+.content {
+  background-color: $backgroundColor;
+
+}
+
 .container {
   margin-top: 10vh;
   display: flex;
@@ -219,6 +224,7 @@
 }
 
 @media (max-width: 1350px) {
+  
   .text {
     display: flex;
     justify-content: center;
@@ -288,8 +294,11 @@
 
 
 @media (max-width:  1000px) {
+ 
   .container{
+    height: auto;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .background-image{

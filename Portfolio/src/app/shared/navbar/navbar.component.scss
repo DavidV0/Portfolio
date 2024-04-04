@@ -1,10 +1,17 @@
 @import "../../../styles.scss";
 
-$grey: #141D2F;
+$grey: #141d2f;
 
-
+.content {
+  @include dFlex();
+  width: 100vw;
+  height: 10vh;
+  background-color: $backgroundColor;
+  position: fixed;
+  z-index: 10;
+}
 .container {
-    position: fixed;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,29 +22,29 @@ $grey: #141D2F;
   color: white;
   z-index: 10;
 
-
   > div {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-right: 10vw;
+    margin-right: 10px;
   }
 }
 
 .logo {
-  padding-left: 10vw;
+  margin-left: 10px;
+
   font-weight: 400px;
   font-size: 32px;
   color: white;
   cursor: pointer;
 }
 
-.i{
+.i {
   margin-left: -15px;
   color: $darkBlue;
 }
 
-.d{
+.d {
   margin-left: -15px;
   color: $lightBlue;
 }
@@ -54,15 +61,14 @@ $grey: #141D2F;
 }
 
 .active {
-    >a{
-        color: $lightBlue;
-    }
+  > a {
+    color: $lightBlue;
+  }
 
   > div {
     width: 55px;
   }
 }
-
 
 .overlay {
   display: none;
@@ -75,7 +81,7 @@ $grey: #141D2F;
   bottom: 0;
   right: 0;
   z-index: 50;
-  margin-top:10vh;
+  margin-top: 10vh;
   transition: display 0.5s ease-in-out;
 }
 
@@ -86,7 +92,7 @@ $grey: #141D2F;
 #menu {
   @include dFlex();
   flex-direction: column;
- 
+
   gap: 29px;
   width: fit-content;
   height: 32px;
@@ -112,7 +118,6 @@ $grey: #141D2F;
   }
 
   &:hover::after {
-
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -121,27 +126,26 @@ $grey: #141D2F;
     color: white;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
       color: $lightBlue;
     }
 
-    &:hover::after{
+    &:hover::after {
       color: $lightBlue;
     }
   }
-
-
 }
 
 .language {
   text-align: center;
- 
+
   color: $lightBlue;
   font-weight: 700;
   cursor: pointer;
 }
 
-#menu-toggle{
+
+#menu-toggle {
   display: none;
   position: relative;
   top: 0px;
@@ -201,34 +205,42 @@ $grey: #141D2F;
   transform: rotate(-45deg) translate(-10px, 4px);
 }
 
-
-
+@media (max-width: 1450px) {
+  .logo {
+    margin-left: 20px;
+  }
+  .links {
+    margin-right: 35px !important;
+  }
+}
 
 @media (max-width: 750px) {
-  .link{
+  .link {
     display: none;
   }
 
   #menu-toggle {
     display: block;
+    margin-right:50px;
   }
 }
 
-@media (max-width: 400px) {
-.container{
-  width: 100vw;
-  
+@media (max-width: 600px) {
+  #menu-toggle {
+    margin-right: 70px;
+  }
 }
 
+@media (max-width: 450px) {
+  .container {
+    width: 100vw;
+  }
+
   .logo {
-    margin-left: 10px;
+    margin-left: 30px;
   }
 
   #menu-toggle {
-    margin-right: 10px;
+    margin-right: 45px;
   }
 }
-
-
-
-

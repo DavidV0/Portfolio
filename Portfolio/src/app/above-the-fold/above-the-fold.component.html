@@ -1,41 +1,51 @@
-<div class="container" id="start">
-  <div class="background-image"></div>
+<div class="content">
+  <div class="container" id="start">
 
-  <div class="picture">
-    <div class="image">
+    <div class="picture">
+      <div class="image">
+        <img
+          id="left-side-img"
+          src="../../assets/img/hero character photo.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="text">
+      <div class="headline">
+        <div class="i-am">I am</div>
+        <div class="name">David Velickovic</div>
+        <div class="profession">FRONTEND DEVELOPER</div>
+        <app-button
+          (click)="goTo('#contact')"
+          [text]="text"
+          class="btn"
+        ></app-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="symbols">
+      <div class="line"></div>
+      <a href="https://github.com/DavidV0" target="_blank" >
+        <img src="../../assets/img/Github button.png" alt="github" />
+      </a>
+
+      <a href="mailto:davidvelickovic@hotmail.com">
+        <img src="../../assets/img/Email button.png" alt="mail" />
+      </a>
+      <a href="mailto:davidvelickovic@hotmail.com" target="_blank" >
+        <img src="../../assets/img/Linkedin button.png" alt="linkedIn" />
+      </a>
+      <p class="email">davidvelickovic&#64;hotmail.com</p>
+    </div>
+    <div class="scroll-down">
+      <div>Scroll down</div>
       <img
-        id="left-side-img"
-        src="../../assets/img/hero character photo.png"
-        alt=""
+        class="arrow-down-line"
+        src="../../assets/img/arrow-down-line.png"
+        alt="arrow downline"
       />
     </div>
   </div>
-  <div class="text">
-    <div class="headline">
-      <div class="i-am">I am</div>
-      <div class="name">David Velickovic</div>
-      <div class="profession">FRONTEND DEVELOPER</div>
-      <app-button (click)="goTo('#contact')"  [text]="text" class="btn"></app-button>
-    </div>
-  </div>
-</div>
-
-<div class="bottom">
-  <div class="symbols">
-    <div class="line"></div>
-    <a href="https://github.com/DavidV0">
-      <img src="../../assets/img/Github button.png" alt="github" />
-    </a>
-
-    <a href="mailto:davidvelickovic@hotmail.com">
-      <img src="../../assets/img/Email button.png" alt="mail" />
-    </a>
-    <a href="mailto:davidvelickovic@hotmail.com">
-      <img src="../../assets/img/Linkedin button.png" alt="linkedIn" />
-    </a>
-    <p class="email">davidvelickovic&#64;hotmail.com</p>
-  </div>
-  <div class="scroll-down">
-    <div>Scroll down</div>
-  <img class="arrow-down-line" src="../../assets/img/arrow-down-line.png" alt="arrow downline">  </div>
 </div>

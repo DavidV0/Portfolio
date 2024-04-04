@@ -1,15 +1,29 @@
-@import url("./../../../styles.scss");
+@import "../../../styles.scss";
 
-
-.container{
-    margin-top: 10vh;
-    color: white;
-    max-width: 1440px;
-    width: 100vw;
+.content {
+  width: 100vw;
+  @include dFlex();
+  justify-content: center;
+  padding-top: 10vh;
+}
+.container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1440px;
 }
 
-@media (max-width: 600px){
-        .container{
-            width: 80vw;
-        }
+
+@media (max-width: 1500px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 80vw;
+  }
 }

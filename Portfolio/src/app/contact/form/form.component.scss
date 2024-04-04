@@ -147,7 +147,7 @@ form {
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1350px){
   form{
     justify-content: center;
   }
@@ -167,11 +167,14 @@ form {
     justify-content: center;
   }
   .input-field{
-    width: 80%;
+    width: 70% !important;
   }
 
   .privacy-policy{
     width: 80%;
+  }
+  .overlay-email{
+    width: 90%;
   }
 }
 
@@ -184,13 +187,7 @@ form {
     justify-content: center;
   }
 
-  .input-field{
-    width: 80%;
-  }
-
-  .privacy-policy{
-    width: 80%;
-  }
+  
 
  
 }
