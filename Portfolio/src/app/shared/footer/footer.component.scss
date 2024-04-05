@@ -3,7 +3,7 @@
 
 .content {
   @include dFlex();
-  width: 103vw;
+  width: 100vw;
   min-height: 20vh;
   background-color: $backgroundColor;
   margin-top: 10vh;

@@ -75,13 +75,31 @@
   }
 }
 
+.animation-left {
+  animation: left 1s ease-in-out;
+  opacity: 1;
+}
 
+@keyframes left {
+  0% {
+    opacity: 0;
+    scale: 0.3;
+    transform: translateX(-450px) translateY(250px);
+  }
+}
 
+.animation-right {
+  animation: right 1s ease-in-out;
+  opacity: 1;
+}
 
-
-
-
-
+@keyframes right {
+  0% {
+    opacity: 0;
+    scale: 0.3;
+    transform: translateX(450px) translateY(-250px);
+  }
+}
 
 @media (max-width: 1500px) {
   .left-side {

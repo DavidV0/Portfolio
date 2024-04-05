@@ -36,17 +36,17 @@
 
   <div class="overlay" [ngClass]="{ active: showOverlay }">
     <div id="menu">
-      <div class="links-mobile">
-        <a href="#about-me">{{ "header.about" | translate }}</a>
+      <div class="links-mobile" >
+        <a (click)="goTo('#about-me')">{{ "header.about" | translate }}</a>
       </div>
       <div class="links-mobile">
-        <a href="#skills">Skills</a>
+        <a (click)="goTo('#skills')">Skills</a>
       </div>
       <div class="links-mobile">
-        <a href="#portfolio">Portfolio</a>
+        <a (click)="goTo('#portfolio')">Portfolio</a>
       </div>
       <div class="links-mobile">
-        <a href="#contact">{{ "header.contact" | translate }}</a>
+        <a (click)="goTo('contact')">{{ "header.contact" | translate }}</a>
       </div>
     </div>
   </div>

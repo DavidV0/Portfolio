@@ -15,7 +15,7 @@ $grey: #141d2f;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 95vw;
   max-width: 1440px;
   height: 10vh;
   background-color: $backgroundColor;
@@ -26,12 +26,10 @@ $grey: #141d2f;
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-right: 10px;
   }
 }
 
 .logo {
-  margin-left: 10px;
 
   font-weight: 400px;
   font-size: 32px;
@@ -205,14 +203,7 @@ $grey: #141d2f;
   transform: rotate(-45deg) translate(-10px, 4px);
 }
 
-@media (max-width: 1450px) {
-  .logo {
-    margin-left: 20px;
-  }
-  .links {
-    margin-right: 35px !important;
-  }
-}
+
 
 @media (max-width: 750px) {
   .link {
@@ -225,22 +216,12 @@ $grey: #141d2f;
   }
 }
 
-@media (max-width: 600px) {
-  #menu-toggle {
-    margin-right: 70px;
-  }
-}
+
 
 @media (max-width: 450px) {
   .container {
     width: 100vw;
   }
 
-  .logo {
-    margin-left: 30px;
-  }
 
-  #menu-toggle {
-    margin-right: 45px;
-  }
 }
