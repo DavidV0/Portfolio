@@ -5,10 +5,10 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 
 
 export const routes: Routes = [
-    { path: 'imprint', title: 'Imprint', component: ImprintComponent },
+    { path: 'imprint/', title: 'Imprint', component: ImprintComponent },
     { path: '', title: 'David-Velickovic', component: LandingpageComponent },
     {
-      path: 'privacyPolicy',
+      path: 'privacyPolicy/',
       title: 'Privacy-Policy',
       component: PrivacyPolicyComponent,
     },
