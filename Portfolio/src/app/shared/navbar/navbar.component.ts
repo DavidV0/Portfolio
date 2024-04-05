@@ -59,6 +59,9 @@ export class NavbarComponent {
     let target = document.querySelector(destination);
     if (target) {
       target.scrollIntoView({ behavior: 'smooth' });
+      if(destination != '#start'){
+      this.openMobileMenu()
+      }
     }
   }
   translating() {
