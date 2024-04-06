@@ -24,5 +24,10 @@ export class AppComponent {
     translation = "de";
     constructor(public translate: TranslateService){
       translate.setDefaultLang(this.translation)
+      console.log("Ich werde erst nächte Woche ein professionelles Bild erstellen lassen und mein LinkedIn Profil würde ich gerne erst nach dem Bewerbungsmodul erstellen  ")
+      console.log("Genauso das Github Profilbild werde ich erst hinzufügen wenn ich das professionelle Bild habe")
+      console.log("Ich hätte das schon geschrieben gehabt aber man hat ja keine möglichkeit euch auf euer feedback zu schreiben was echt schade ist")
     }
+
+   
 }
