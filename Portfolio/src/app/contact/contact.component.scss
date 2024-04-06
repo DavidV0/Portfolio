@@ -20,14 +20,16 @@
 
 .background-image{
 
+  position: absolute;
+  @include dFlex();
+  justify-content: start;
+  width: 100vw;
+  height: 30vh;
+  z-index: -2;
   >img{
-    position: absolute;
- 
-    top: 4100px;
-    left: 10px;
-    z-index: -1;
-    height: 500px;
-    width: 500px;
+    
+    height:100%;
+    width: 70%;
   }
 }
 
@@ -135,9 +137,7 @@ justify-content: center;  }
     }
   }
 
-  .background-image{
-    top: 3600px;
-  }
+
 }
 
 @media (max-width: 1350px) {
@@ -168,13 +168,7 @@ justify-content: center;  }
   }
 }
 
-@media (max-width: 900px) {
- .background-image{
-    >img{
-      top: 4500px
-    }
- }
-}
+
 
 @media (max-width: 650px) {
   .contact-headline {
@@ -206,12 +200,3 @@ justify-content: center;  }
 
 }
 
-@media (max-width: 450px) {
-  .background-image{
-    top: 5500px;
-
-    >img{
-      width: 70%;
-    }
-  }
-}

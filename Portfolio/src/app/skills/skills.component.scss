@@ -96,6 +96,7 @@
 .background-image{
   position: absolute;
   width: 100vw;
+  height: 50vh;
   @include dFlex();
   justify-content: start;
   opacity: 0.5;
