@@ -4,7 +4,7 @@
 .content {
   @include dFlex();
   width: 100vw;
-  min-height: 20vh;
+  height: 20vh;
   background-color: $backgroundColor;
   margin-top: 10vh;
   border-top: 4px solid;
