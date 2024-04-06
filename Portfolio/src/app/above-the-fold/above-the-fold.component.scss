@@ -2,12 +2,14 @@
 
 .content {
   background-color: $backgroundColor;
+  padding-top: 100px;
 
 }
 
 .container {
   margin-top: 10vh;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   width: 100vw;
@@ -346,7 +348,6 @@
 @media (max-height: 700px){
   .container{
     height: 110vh;
-    padding-top: 100px
   }
 }
 
