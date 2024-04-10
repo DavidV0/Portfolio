@@ -27,7 +27,6 @@
 
 .right {
   @include dFlex();
-  align-items: center;
   width: 50%;
 
  
@@ -61,11 +60,13 @@
 }
 
 .image {
-  border: 2px solid $lightBlue;
+  width: 60%;
+  border: 3px solid $lightBlue;
   border-radius: 50%;
   > img {
-    height: 450px ;
-    width: 450px ;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
   }
 }
 
@@ -136,6 +137,10 @@
     align-items: center;
     justify-content: center;
     height: 50%;
+  }
+
+  .center{
+    width: 0%;
   }
 
   .image {
