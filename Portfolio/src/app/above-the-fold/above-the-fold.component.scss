@@ -143,13 +143,19 @@
 }
 
 .symbols {
+  padding-bottom: 11vh; 
   @include dFlex();
   gap: 20px;
+  >a {
+  cursor: pointer;
 
+  }
   > img {
+
     height: 30px;
     width: 30px;
   }
+
 
   > p {
     color: white;
