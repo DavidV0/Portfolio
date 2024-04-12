@@ -361,7 +361,11 @@
 
 @media (max-height: 700px){
   .container{
-    height: 110vh;
+    height: 80vh;
+  }
+
+  .image{
+    height: 100%;
   }
 }
 

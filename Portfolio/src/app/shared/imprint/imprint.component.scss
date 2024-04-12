@@ -39,3 +39,10 @@ h1 {
     font-size: 38px;
   }
 }
+
+
+@media (max-height: 700px){
+  .content{
+    padding-top: 35vh;
+  }
+}
