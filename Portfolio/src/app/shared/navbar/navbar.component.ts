@@ -3,6 +3,7 @@ import { Component , Input} from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from '../../app.component';
+import { LanguageService } from '../../services/language.service';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -18,7 +19,8 @@ export class NavbarComponent {
 
   @Input() language = 'DE';
 
-  constructor(private appComponent: AppComponent){}
+
+  constructor(private appComponent: AppComponent, private languageService: LanguageService){}
 
   clickEvent(id: number) {
     if (id == 0) {
@@ -72,9 +74,11 @@ export class NavbarComponent {
     let german = "DE"
     if (this.language === 'DE') {
       language = german;
+      this.languageService.setLen("DE");
     } else {
       language = english
       this.language = 'EN';
+      this.languageService.setLen("EN");
     }
   }
 }

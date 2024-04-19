@@ -3,11 +3,15 @@
         "about": "About me",
         "contact": "Contakt"
     },
+    "above":{
+        "me": "I am",
+        "button": "Let´s talk!"
+    },
     "about": {
         "title": "About me",
         "description": "Hi, I'm a frontend developer from the austrian city Linz. Computers & technology have always been a great passion of mine. I would like to share this passion with others.",
-        "fact1": "I love the idea of creating something from scratch, that supports and inspire people in their daily tasks.",
-        "fact2": "To this end, I have learned new technologies through my further training in order to not only build functional applications, but also to round them off with an appealing design and user-friendly operation."
+        "fact1": "I love the idea of creating something from scratch, that supports and inspires people in their daily tasks.",
+        "fact2": "Due to the fact, I have learned new technologies through my further training in order to not only build functional applications, but also to round them off with an appealing design and user-friendly operation."
     },
     "skills": {
         "title": "My Skills",

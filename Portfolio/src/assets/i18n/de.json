@@ -3,9 +3,13 @@
         "about": "Über mich",
         "contact": "Kontakt"
     },
+    "above":{
+        "me": "Ich bin",
+        "button": "Kontakt aufnehmen"
+    },
     "about": {
         "title": "Über mich",
-        "description": "Hallo, ich bin ein Frontend-Entwickler aus der österreichischen Stadt Linz. Computer und Technologie waren schon immer meine Leidenschaft. Deswegen würde ich diese Leidenschaft gerne mit anderen teilen.",
+        "description": "Hallo, ich bin ein Frontend-Entwickler aus der österreichischen Stadt Linz. Für Computer und Technologie konnte ich mich immer schon Begeistern. Deswegen würde ich diese Leidenschaft gerne mit anderen teilen.",
         "fact1": " Ich liebe die Idee, etwas von Grund auf zu erschaffen, das Menschen in ihrem täglichen Leben unterstützt und inspiriert.",
         "fact2": "Zu diesem Zweck habe ich durch meine Weiterbildung neue Technologien erlernt, um nicht nur funktionale Anwendungen zu entwickeln, sondern sie auch mit ansprechendem Design und benutzerfreundlicher Bedienung abzurunden."
     },
@@ -16,7 +20,7 @@
     },
 
     "portfolio": {
-        "description": "Erkunden Sie eine Auswahl meiner Arbeit hier - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "description": "Erkunden Sie eine Auswahl meiner Arbeit - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
         "project0": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag & Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
         "project1": "Ein einfaches Jump-and-Run-Spiel, dass auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Chilisoßen zu finden, um gegen die Killerhenne zu kämpfen."
     

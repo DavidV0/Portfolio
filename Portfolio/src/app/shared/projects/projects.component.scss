@@ -45,6 +45,7 @@
 .live-btn {
   text-decoration: none;
   @include dFlex();
+  font-size: 18px;
   width: 152px;
   height: 58px;
   background-color: $lightBlue;
@@ -63,6 +64,7 @@
   @include dFlex();
   width: 152px;
   height: 58px;
+  font-size: 18px;
   background-color: transparent;
   color: white;
   border-radius: 10px;
@@ -153,5 +155,6 @@
   .git-btn {
     margin: 8px;
     width: 120px;
+    
   }
 }
