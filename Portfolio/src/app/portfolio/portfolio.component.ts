@@ -16,7 +16,7 @@ export class PortfolioComponent {
       name: 'Bubble',
       language: 'Angular, TypeScript, Firebase, HTML, SCSS',
       description: 'Chat-Messenger Applikation im Stile von Slack zur Kommunikation im Team. ',
-      link: 'https://www.david-velickovic.at/projects/bubble/index.html',
+      link: 'https://www.david-velickovic.at/projects/bubble/',
       github: 'https://github.com/DavidV0/Bubble',
       src: '../../assets/img/Pollo loco 2.png',
     },
