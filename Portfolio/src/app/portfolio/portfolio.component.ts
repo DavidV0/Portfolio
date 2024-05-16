@@ -18,7 +18,7 @@ export class PortfolioComponent {
       description: 'Chat-Messenger Applikation im Stile von Slack zur Kommunikation im Team. ',
       link: 'https://www.david-velickovic.at/projects/bubble/',
       github: 'https://github.com/DavidV0/Bubble',
-      src: '../../assets/img/Pollo loco 2.png',
+      src: '../../assets/img/DABubble.png',
     },
     {
       name: 'Join',
