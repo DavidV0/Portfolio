@@ -20,8 +20,10 @@
     },
     "portfolio": {
         "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-        "project0": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "project1": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
+        "project0": "Chat-Messenger application similar to slack. Create or join channels or chat via direct messages. React on messages or upload files and pictures.",
+        
+        "project1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "project2": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
     
     },
     "contact": {

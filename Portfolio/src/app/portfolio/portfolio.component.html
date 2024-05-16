@@ -24,6 +24,7 @@
       [description]="'portfolio.project' + i | translate"
       [link]="projects[i].link"
       [github]="projects[i].github"
+      [isMirrored]="i % 2 === 1"
     >
     </app-projects>
     }

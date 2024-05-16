@@ -18,6 +18,17 @@
   flex-direction: column;
   justify-content: start;
 }
+.content.mirrored {
+  flex-direction: row; /* Richtung umkehren */
+}
+
+.content.mirrored .left-side {
+  order: 2; /* Ändere die Reihenfolge */
+}
+
+.content.mirrored .right-side {
+  order: 1; /* Ändere die Reihenfolge */
+}
 
 .project-name {
   color: $lightBlue;

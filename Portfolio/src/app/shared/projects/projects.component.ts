@@ -21,7 +21,9 @@ export class ProjectsComponent  implements OnInit, OnDestroy {
   @Input() link: string = '';
   @Input() github: string = '';
   @Input() src: string = '';
+  @Input() isMirrored: boolean = false;
   @ViewChild('projectRightSide') rightSideElement!: ElementRef;
+
 
 
   ngOnInit(): void {
