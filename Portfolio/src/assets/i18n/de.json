@@ -9,13 +9,13 @@
   },
   "about": {
     "title": "Über mich",
-    "description": "Hallo, ich bin ein Frontend-Entwickler aus der österreichischen Stadt Linz. Für Computer und Technologie konnte ich mich immer schon Begeistern. Deswegen würde ich diese Leidenschaft gerne mit anderen teilen.",
+    "description": "Hallo, ich bin ein Fullstack-Entwickler aus der österreichischen Stadt Linz. Für Computer und Technologie konnte ich mich immer schon Begeistern. Deswegen würde ich diese Leidenschaft gerne mit anderen teilen.",
     "fact1": " Ich liebe die Idee, etwas von Grund auf zu erschaffen, das Menschen in ihrem täglichen Leben unterstützt und inspiriert.",
     "fact2": "Zu diesem Zweck habe ich durch meine Weiterbildung neue Technologien erlernt, um nicht nur funktionale Anwendungen zu entwickeln, sondern sie auch mit ansprechendem Design und benutzerfreundlicher Bedienung abzurunden."
   },
   "skills": {
     "title": "Meine Skills",
-    "description": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "description": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Fullstack-Technologien und Konzepten gesammelt.",
     "button": "Kontakt"
   },
 
@@ -23,14 +23,14 @@
     "description": "Erkunden Sie eine Auswahl meiner Arbeit - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "project0": "Chat-Messenger Applikation im Stile von Slack zur Kommunikation im Team. Erstellung von eigenen Channels oder Direktnachrichten. Reaktionen auf Nachrichten hochladen von Files oder Fotos.",
     "project1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag & Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-    "project2": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Chilisoßen zu finden, um gegen die Killerhenne zu kämpfen."
-
+    "project2": "Videoflix ist eine hochmoderne Video-Streaming-Plattform, die mit einem Angular und TypeScript Frontend und einem Backend auf Basis des Django Rest Framework entwickelt wurde. Die Plattform ermöglicht Nutzern das Streamen von Videos. Die Authentifizierung erfolgt über ein sicheres System mit Aktivierungsemails, um die Sicherheit der Nutzerkonten zu gewährleisten.",
+    "project3": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Chilisoßen zu finden, um gegen die Killerhenne zu kämpfen."
   },
   "contact": {
     "title": "Kontakt",
     "problem": "Haben Sie eine neue Herausforderung oder Ideen für ein neues Projekt ?",
     "description": "Gerne können Sie mir durch dieses Formular schreiben. Es würde mich freuen von Ihnen zu hören, Ihre Ideen kennen zu lernen und Sie mit meiner Arbeit zu unterstützen.",
-    "alert": "Sie benötigen einen Frontend-Entwickler ?",
+    "alert": "Sie benötigen einen Fullstack-Entwickler ?",
     "link": " Schreiben Sie mir!"
   },
   "contactform": {
@@ -54,7 +54,7 @@
     "imprint": "Impressum",
     "information": "Angaben gemäß § 5 TMG",
     "post": "Postanschrift",
-    "label": "Frontend-Developer",
+    "label": "Fullstack-Developer",
     "name": "David Velickovic",
     "contact": "Kontakt",
     "information2": "Information gemäß § 36 VSBG",

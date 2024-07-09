@@ -1,67 +1,67 @@
 {
-    "header":{
-        "about": "About me",
-        "contact": "Contakt"
-    },
-    "above":{
-        "me": "I am",
-        "button": "Let´s talk!"
-    },
-    "about": {
-        "title": "About me",
-        "description": "Hi, I'm a frontend developer from the austrian city Linz. Computers & technology have always been a great passion of mine. I would like to share this passion with others.",
-        "fact1": "I love the idea of creating something from scratch, that supports and inspires people in their daily tasks.",
-        "fact2": "Due to the fact, I have learned new technologies through my further training in order to not only build functional applications, but also to round them off with an appealing design and user-friendly operation."
-    },
-    "skills": {
-        "title": "My Skills",
-        "description": "I have grown my frontend developments skills that have allowed me to create different real projects.",
-        "button": "Get in touch"
-    },
-    "portfolio": {
-        "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-        "project0": "Chat-Messenger application similar to slack. Create or join channels or chat via direct messages. React on messages or upload files and pictures.",
-        
-        "project1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "project2": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
-    
-    },
-    "contact": {
-        "title":"Contact",
-        "problem":"Got a problem to solve?",
-        "description":"Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-        "alert":"Need a Frontend developer? Contact me!",
-        "link":" Contact me!"
-    },
-    "contactform": {
-        "name":"Your name is required",
-        "email":"Your email is required",
-        "message":"Your message is empty",
-        "privacy1":"I've read the ",
-        "privacy2":"privacy-policy",
-        "privacy3":" and agree to the processing of my data as outlined.",
-        "privacy4":"Please accept the privacy policy",
-        "privacy5":"Thank you for the message",
-        "sending":"send message",
-        "placeholderName": "Your name",
-        "placeholderEmail": "Your email",
-        "placeholderMessage": "Your message"
-    },
-    "footer":{
-        "imprint": "Imprint"
-    },
-    "imprint": {
-        "imprint":"Imprint",
-        "information":"Information according to § 5 TMG",
-        "label": "Frontend-Developer",
-        "name": "David Velickovic",
-        "post": "Postal adress",
-        "contact": "Contact",
-        "information2": "Information according to § 36 VSBG",
-        "law": "In accordance with § 36 VSBG (Consumer Dispute Resolution Act - Act on Alternative Dispute Resolution in Consumer Matters), the operator of this website",
-        "obligated": "declares: We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
-        "foot1": "The imprint was created with the Imprint-generator of the activeMind AG",
-        "generator": " Imprint-generator of the activeMind AG",
-        "foot2": "."
-    }
+  "header": {
+    "about": "About me",
+    "contact": "Contakt"
+  },
+  "above": {
+    "me": "I am",
+    "button": "Let´s talk!"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Hi, I'm a fullstack developer from the austrian city Linz. Computers & technology have always been a great passion of mine. I would like to share this passion with others.",
+    "fact1": "I love the idea of creating something from scratch, that supports and inspires people in their daily tasks.",
+    "fact2": "Due to the fact, I have learned new technologies through my further training in order to not only build functional applications, but also to round them off with an appealing design and user-friendly operation."
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "I have grown my fullstack developments skills that have allowed me to create different real projects.",
+    "button": "Get in touch"
+  },
+  "portfolio": {
+    "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "project0": "Chat-Messenger application similar to slack. Create or join channels or chat via direct messages. React on messages or upload files and pictures.",
+
+    "project1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "project2": "Videoflix is a cutting-edge video streaming platform developed with an Angular and TypeScript frontend and a Django Rest Framework backend. The platform allows users to stream videos. Authentication is handled through a secure system with activation emails to ensure account security.",
+    "project3": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
+  },
+  "contact": {
+    "title": "Contact",
+    "problem": "Got a problem to solve?",
+    "description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "alert": "Need a Fullstack developer? Contact me!",
+    "link": " Contact me!"
+  },
+  "contactform": {
+    "name": "Your name is required",
+    "email": "Your email is required",
+    "message": "Your message is empty",
+    "privacy1": "I've read the ",
+    "privacy2": "privacy-policy",
+    "privacy3": " and agree to the processing of my data as outlined.",
+    "privacy4": "Please accept the privacy policy",
+    "privacy5": "Thank you for the message",
+    "sending": "send message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message"
+  },
+  "footer": {
+    "imprint": "Imprint"
+  },
+  "imprint": {
+    "imprint": "Imprint",
+    "information": "Information according to § 5 TMG",
+    "label": "Fullstack-Developer",
+    "name": "David Velickovic",
+    "post": "Postal adress",
+    "contact": "Contact",
+    "information2": "Information according to § 36 VSBG",
+    "law": "In accordance with § 36 VSBG (Consumer Dispute Resolution Act - Act on Alternative Dispute Resolution in Consumer Matters), the operator of this website",
+    "obligated": "declares: We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
+    "foot1": "The imprint was created with the Imprint-generator of the activeMind AG",
+    "generator": " Imprint-generator of the activeMind AG",
+    "foot2": "."
+  }
 }

@@ -9,9 +9,9 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [IconComponent, ButtonComponent, CommonModule, TranslateModule],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrl: './skills.component.scss',
 })
-export class SkillsComponent  implements OnDestroy, OnInit {
+export class SkillsComponent implements OnDestroy, OnInit {
   observer?: IntersectionObserver;
 
   constructor(private elementRef: ElementRef) {}
@@ -41,7 +41,7 @@ export class SkillsComponent  implements OnDestroy, OnInit {
     }
   }
 
-  text = "Get in touch"
+  text = 'Get in touch';
 
   goTo(destination: string) {
     let target = document.querySelector(destination);
@@ -49,7 +49,7 @@ export class SkillsComponent  implements OnDestroy, OnInit {
       target.scrollIntoView();
     }
   }
-  
+
   icons = [
     {
       src: '../../assets/img/icons/Angular.png',
@@ -91,6 +91,13 @@ export class SkillsComponent  implements OnDestroy, OnInit {
       src: '../../assets/img/icons/scrum.png',
       name: 'Scrum',
     },
-   
+    {
+      src: '../../assets/img/icons/python.svg',
+      name: 'Python',
+    },
+    {
+      src: '../../assets/img/icons/django.svg',
+      name: 'Django',
+    },
   ];
 }

@@ -1,10 +1,9 @@
 @import "../../../styles.scss";
-
 .content {
   @include dFlex();
   flex-direction: row;
   width: 99vw;
-  max-width: 1440px
+  max-width: 1440px;
 }
 
 .left-side {
@@ -18,6 +17,7 @@
   flex-direction: column;
   justify-content: start;
 }
+
 .content.mirrored {
   flex-direction: row; /* Richtung umkehren */
 }
@@ -40,6 +40,7 @@
   color: $darkBlue;
   font-size: 23px;
   font-weight: 400;
+  text-align: center;
 }
 
 .description {
@@ -89,7 +90,7 @@
 }
 
 .animation-left {
-  animation: left 1s ease-in-out;
+  animation: left 1s ease-out;
   opacity: 1;
 }
 
@@ -121,8 +122,6 @@
       height: 320px;
     }
   }
-
-
 }
 
 @media (max-width: 900px) {
@@ -131,13 +130,12 @@
   }
 
   .right-side {
-   width: 70%;
-
+    width: 70%;
   }
 }
 
 @media (max-width: 500px) {
-  .portfolio-decsription{
+  .portfolio-decsription {
     padding-bottom: 0 !important;
   }
 
@@ -146,26 +144,33 @@
     width: 100%;
 
     > img {
-      width:100%;
+      width: 100%;
       height: 100%;
     }
   }
 
   .right-side {
-  width: 80%;   
-  margin: 0; 
-  align-items: center;
+    width: 80%;
+    margin: 0;
+    align-items: center;
   }
 
-  .description{
+  .description {
     text-align: center;
   }
 
-  
   .live-btn,
   .git-btn {
     margin: 8px;
     width: 120px;
-    
+  }
+
+  .content.mirrored {
+    flex-direction: column; /* Für mobile Ansicht umstellen */
+  }
+
+  .content.mirrored .left-side,
+  .content.mirrored .right-side {
+    order: initial; /* Reihenfolge zurücksetzen */
   }
 }

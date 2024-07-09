@@ -4,8 +4,6 @@
   background-color: $backgroundColor;
   padding-top: 100px;
   height: 80vh;
-
-
 }
 
 .container {
@@ -30,9 +28,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  
-  @include dFlex();
 
+  @include dFlex();
 }
 
 #left-side-img {
@@ -46,12 +43,11 @@
 }
 
 .text {
-
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  width:50%;
+  width: 50%;
 }
 
 .headline {
@@ -142,19 +138,17 @@
 }
 
 .symbols {
-  padding-bottom: 11vh; 
+  z-index: 11;
+  padding-bottom: 11vh;
   @include dFlex();
   gap: 20px;
-  >a {
-  cursor: pointer;
-
+  > a {
+    cursor: pointer;
   }
   > img {
-
     height: 30px;
     width: 30px;
   }
-
 
   > p {
     color: white;
@@ -174,7 +168,7 @@
     height: 18px;
     width: 18px;
     padding-left: 5px;
-    margin-top: 5px
+    margin-top: 5px;
   }
 }
 
@@ -190,9 +184,7 @@
   }
 }
 
-
 @media (max-width: 1500px) {
-
   .headline {
     > :last-child {
       padding-top: 20px;
@@ -212,12 +204,9 @@
   .profession {
     font-size: 42px;
   }
-
-  
 }
 
 @media (max-width: 1350px) {
-  
   .text {
     display: flex;
     justify-content: center;
@@ -238,15 +227,9 @@
   .profession {
     font-size: 36px;
   }
-
-
 }
 
-
-
 @media (max-width: 1100px) {
- 
-
   .scroll-down {
     right: 0px;
   }
@@ -254,23 +237,20 @@
   .text {
     width: 470px;
   }
-
 }
 
-
-@media (max-width:  1000px) {
- 
-  .container{
+@media (max-width: 1000px) {
+  .container {
     flex-direction: column;
   }
 
-  .picture{
+  .picture {
     height: 60%;
   }
-  .image{
+  .image {
     height: 70%;
   }
-  #left-side-img{
+  #left-side-img {
     width: 70%;
     height: 100%;
   }
@@ -283,13 +263,11 @@
 }
 
 @media (max-width: 650px) {
- 
-
-  .email{
+  .email {
     display: none;
   }
 
-  .scroll-down{
+  .scroll-down {
     display: none;
   }
 
@@ -307,28 +285,26 @@
     font-size: 28px;
   }
 
-  .line{
+  .line {
     width: 150px;
   }
 
-  .symbols{
-  
+  .symbols {
     gap: 30px;
   }
-
 }
 
 @media (max-width: 550px) {
-  .picture{
+  .picture {
     width: 100vw;
   }
-  .line{
+  .line {
     width: 100px;
   }
 }
 
 @media (max-width: 500px) {
-  .text{
+  .text {
     width: 320px;
     margin-left: 10px;
   }
@@ -347,24 +323,21 @@
     font-size: 20px;
   }
 
-  .line{
+  .line {
     width: 60px;
   }
 
-  .symbols{
-  
+  .symbols {
     gap: 15px;
   }
- 
 }
 
-@media (max-height: 700px){
-  .container{
+@media (max-height: 700px) {
+  .container {
     height: 80vh;
   }
 
-  .image{
+  .image {
     height: 100%;
   }
 }
-
