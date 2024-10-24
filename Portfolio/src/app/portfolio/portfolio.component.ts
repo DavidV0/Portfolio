@@ -30,6 +30,14 @@ export class PortfolioComponent {
       github: 'https://github.com/DavidV0/Join',
       src: '../../assets/img/Pollo loco 2.png',
     },
+    {
+      name: 'Stock Dashboard',
+      language: 'Vue, Javascript, HTML, CSS',
+      description: 'Stock Dashboard von den gloreichen Sieben',
+      link: 'https://www.david-velickovic.at/projects/stock-dashboard/index.html',
+      github: 'https://github.com/DavidV0/stock-dashboard',
+      src: '../../assets/img/stock.png',
+    },
 
     {
       name: 'Videoflix',

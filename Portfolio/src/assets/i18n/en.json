@@ -23,8 +23,10 @@
     "project0": "Chat-Messenger application similar to slack. Create or join channels or chat via direct messages. React on messages or upload files and pictures.",
 
     "project1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-    "project2": "Videoflix is a cutting-edge video streaming platform developed with an Angular and TypeScript frontend and a Django Rest Framework backend. The platform allows users to stream videos. Authentication is handled through a secure system with activation emails to ensure account security.",
-    "project3": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
+    "project2": "Vue project in which the Magnificent Seven are represented in various diagrams using the Vue Chart.js library. ",
+
+    "project3": "Videoflix is a cutting-edge video streaming platform developed with an Angular and TypeScript frontend and a Django Rest Framework backend. The platform allows users to stream videos. Authentication is handled through a secure system with activation emails to ensure account security.",
+    "project4": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
   },
   "contact": {
     "title": "Contact",

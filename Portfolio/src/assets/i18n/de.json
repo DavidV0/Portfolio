@@ -23,8 +23,9 @@
     "description": "Erkunden Sie eine Auswahl meiner Arbeit - Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "project0": "Chat-Messenger Applikation im Stile von Slack zur Kommunikation im Team. Erstellung von eigenen Channels oder Direktnachrichten. Reaktionen auf Nachrichten hochladen von Files oder Fotos.",
     "project1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag & Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-    "project2": "Videoflix ist eine hochmoderne Video-Streaming-Plattform, die mit einem Angular und TypeScript Frontend und einem Backend auf Basis des Django Rest Framework entwickelt wurde. Die Plattform ermöglicht Nutzern das Streamen von Videos. Die Authentifizierung erfolgt über ein sicheres System mit Aktivierungsemails, um die Sicherheit der Nutzerkonten zu gewährleisten.",
-    "project3": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Chilisoßen zu finden, um gegen die Killerhenne zu kämpfen."
+    "project2": "Vue Projekt in dem die glorreichen Sieben durch die Vue Chart.js Bibliothek in verschiedenen Diagrammen dargestellt werden. ",
+    "project3": "Videoflix ist eine hochmoderne Video-Streaming-Plattform, die mit einem Angular und TypeScript Frontend und einem Backend auf Basis des Django Rest Framework entwickelt wurde. Die Plattform ermöglicht Nutzern das Streamen von Videos. Die Authentifizierung erfolgt über ein sicheres System mit Aktivierungsemails, um die Sicherheit der Nutzerkonten zu gewährleisten.",
+    "project4": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Chilisoßen zu finden, um gegen die Killerhenne zu kämpfen."
   },
   "contact": {
     "title": "Kontakt",
